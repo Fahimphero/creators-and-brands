@@ -15,7 +15,7 @@ const Brand = () => {
     const [creatorsData, setCreatorsData] = useState([]);
     useEffect(() => {
 
-        fetch('http://localhost:5000/creators')
+        fetch('https://lit-reaches-92387.herokuapp.com/creators')
             .then(res => res.json())
             .then(data => setCreatorsData(data))
 
@@ -27,7 +27,7 @@ const Brand = () => {
         const currentUser = { url: name };
         console.log(currentUser)
 
-        fetch(`http://localhost:5000/brand/ad/${emailId}`, {
+        fetch(`https://lit-reaches-92387.herokuapp.com/brand/ad/${emailId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
