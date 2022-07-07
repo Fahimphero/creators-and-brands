@@ -15,7 +15,7 @@ const Creator = () => {
     const [brandsData, setBrandsData] = useState([]);
     useEffect(() => {
 
-        fetch('https://lit-reaches-92387.herokuapp.com/brands')
+        fetch('https://powerful-thicket-50600.herokuapp.com/brands')
             .then(res => res.json())
             .then(data => setBrandsData(data))
 
